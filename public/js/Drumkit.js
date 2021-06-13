@@ -15,9 +15,7 @@ function active(item) {
   }, 100);
 }
 function makeSound(a) {
-  a = "sounds/Drumkit/" + a + ".wav";
-  console.log(a);
-  let m = new Audio(a);
+  let m = new Audio("sounds/Drumkit/" + a + ".wav");
   m.play();
   setInterval(() => {
     m.pause();
