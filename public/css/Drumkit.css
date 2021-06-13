@@ -1,0 +1,39 @@
+body {
+  height: 90vh;
+  width: 99%;
+  display: grid;
+  place-items: center;
+  background-color: #008e8e;
+  color: white;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5), 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.title {
+  font-size: 4rem;
+  margin-top: 100px;
+}
+.drums-container {
+  height: 150px;
+  width: 1000px;
+  text-shadow: none;
+  display: flex;
+  margin-bottom: 100px;
+}
+.key-name {
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  border: 3px solid white;
+  border-radius: 2rem;
+  height: 100px;
+  width: 100px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.active {
+  filter: hue-rotate(-200deg);
+  position: relative;
+  top: -10px;
+  transition: top;
+}
